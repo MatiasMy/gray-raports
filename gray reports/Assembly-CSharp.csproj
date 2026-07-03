@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\openApp.cs" />
     <Compile Include="Assets\Scripts\emailScript.cs" />
+    <Compile Include="Assets\Scripts\endingDataScript.cs" />
     <Compile Include="Assets\Scripts\paperScript.cs" />
     <Compile Include="Assets\Scripts\gameScript.cs" />
   </ItemGroup>
