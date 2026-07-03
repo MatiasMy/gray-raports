@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.SceneManagement;
 public class gameScript : MonoBehaviour
 {
-    void Start()
+    public GameObject emailApp;
+    public GameObject desktop;
+    public void openEmailApp()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        emailApp.SetActive(true);
+        desktop.SetActive(false);
     }
 }
