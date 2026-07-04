@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\endingDataScript.cs" />
     <Compile Include="Assets\Scripts\paperScript.cs" />
     <Compile Include="Assets\Scripts\gameScript.cs" />
+    <Compile Include="Assets\Scripts\notesScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
