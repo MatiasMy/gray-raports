@@ -64,12 +64,16 @@
     <Analyzer Include="C:\Program Files (x86)\2022.3.13f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\captainAnswerScript.cs" />
     <Compile Include="Assets\Scripts\openApp.cs" />
+    <Compile Include="Assets\Scripts\newsScript.cs" />
     <Compile Include="Assets\Scripts\emailScript.cs" />
     <Compile Include="Assets\Scripts\endingDataScript.cs" />
     <Compile Include="Assets\Scripts\paperScript.cs" />
+    <Compile Include="Assets\Scripts\someScript.cs" />
     <Compile Include="Assets\Scripts\gameScript.cs" />
     <Compile Include="Assets\Scripts\notesScript.cs" />
+    <Compile Include="Assets\Scripts\deputyScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
