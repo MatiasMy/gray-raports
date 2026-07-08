@@ -1,0 +1,171 @@
+EMAILS - RECIEVED
+
+ DAY 1
+
+	header: A New Case
+	text: Sergeant, I have a new job for you. I've gotten a request from our dear city of Crimebourgstan to bring question and detain suspect Mr Grau. I expect you to report to me at the end of the day.
+	sender: Captain Schwartz
+
+	header: Manpower For The Case
+	text: I've assigned two deputies to your case. They'll be under your command from tomorrow on.
+	sender: Lieutenant Stadt
+
+	header: Cutting Edge Computers On Sale!
+	text: Buy a new CompMachine95 for only 950$. Sale only lasts for this week, so don't miss out!
+	sender: CompMachine Co
+
+ DAY 2
+	
+	header: Field Research IS VITAL
+	text: I've read your report, Sergeant... It has come to my attention that you cannot conduct this investigation on your own, sitting behind a desktop, reading SlowKilo and The Times. Two deputies have been assigned to help you conduct field research. You can send these deputies on missions to uncover secrets in the wild. One more thing. I think you should stop looking into the suspect's affiliation to the Conservative party. Seems unimportant in my opinion.
+	sender: Captain Schwartz (good ending)
+	
+	header: Field Research Is Vital 
+	text: Good Job, Sergeant. It has come to my attention, though, that you cannot conduct this investigation on your own, sitting behind a desktop, reading up on The latest Times. I've assigned you two deputies to help you conduct field research. You can send these deputies on missions to uncover secrets in the wild. Keep doing what you're doing!
+	sender: Captain Schwartz (neutral ending)
+
+	header: Greetings to the Sergeant
+	text: Hi! I'm Molly Weiß, and I'm eager to start working with you to find the bad guys! You can send me on missions, and I'll use quick wits to 
+	sender: Deputy Weiß 
+
+	header: A Formal Introduction
+	text: Hello. My name is Jack Black. I've been assigned as deputy in your new case. <b> You can send me on missions. </b> You can count on me to get the job done efficiently.
+	sender: Deputy Black
+
+
+
+
+
+ DAY 3
+
+	header: Conserning This Case's Current Direction
+	text: Sergeant, I assure you Mr Pikimusta has nothing to do with me or the suspect. This is a missunderstanding and is affecting you're performance in solwing this investigadion. Re direct your focus on hwat matters. I have importantt matters to atend today, so dont mess up.
+	sender: Captain Schartz (good ending)
+
+	header: About your Deputies
+	text: Good job, Sergeant. The case is coming along nicely. Today seems to have an interesting development. Don't disappoint me. Also, keep in mind that the deputies I've assigned you are not carbon copies of eachother: they have their strengths. I would recommend you stick with deputy Black for your missions from now on. He sticks to code and is loyal to me. I have important business today so attend to today
+	sender: Captain Schwartz (neutral ending)
+
+	header: Home investigation results
+	text: Hi, Weiß here. I checked out Grau's house as you asked. The whole place felt like it'd been abandoned a while ago: there was noBODY there! There were a lot of crazy documents though. Like how his wife is the leader of the Future -party and some documents related to someweird people not connected to the Future -party. Sucks that the wife's locked up for doing something illegal. I also brained together where these weird extremist people live, so I can go chat them up nex- I mean investigate them.
+	sender: Deputy Weiß (HOME INVESTIGATION RESULTS)
+
+	header: Results: Home Investigation
+	text: The suspect's home has been empty for a roughly 3 days. That's not to say it's without clues. The suspect's wife is the leader of the Future -party and Mr Grau has ties to extremist groups around Crimebourgistan. I've singled out the most likely connection to yield us results quickly. I suggest we move on these contacts without delay to learn more.
+	sender: Deputy Black (HOME INVESTIGATION RESULTS)
+
+ DAY 4 
+
+	header: Something Personal
+	text: I admit it. I was paid to detain Ms Grau. I was influenced. Mr Pikimusta threatened me with my job if I didn't play along. I had no choice!
+	sender: Captain Schwartz (good ending)
+
+	header: Time To Finish The Job
+	text: Good job, Sergeant. Now that we know where Mr Grau is hiding, you can send a deputy to bring them in and jail them. May luck be on our side.
+	sender: Captain Schwartz (neutral ending)
+
+	header: The fire was a set-up
+	text: I think someone has left a rotten egg here, because this fire smells off. Like, all the major clues point to this being a some sort of revenge by Mr Grau on the People's Party, but It's just... Off! Some of the people running this event smile when I look away and guide me to look at the same, obvious clues over and over again. And I can't just say that to their face. It's so stupid! I can't get more out of this scene, but I think we should look into some government officials, especially the ones responsible for this fishing event in this private forest.
+	sender: Deputy Weiß (FIRE INVESTIGATION RESULTS)
+
+	header: Mr Grau is connected with assholes
+	text: These people are crazy! I interrogated the ties found in. I don't know what to make of this other than the scale of their operation: we've stepped into something huge! Oh, and I <b>found out where Mr Grau is hiding.</b> Now we can go talk to him and see what this is all about.
+	sender: Deputy Weiß (TIES INVESTIGATION RESULTS)
+
+	header: Results: Fire Investigation
+	text: The suspect has seemingly left many tracks at this burned fishing contest. I should note that all evidence regarding Mr Grau was pointed out to me by someone already there. There was no involved thinking on my part; everything was done for me, which leaves me with suspicions.
+	sender: Deputy Black (AFTER FIRE INVESTIGATION)
+
+	header: Results: Ties Investigation
+	text: The suspect's ties lips remained somewhat sealed regarding our suspect. They know, however, where the suspect is, and so do we. I should note that this is information they freely gave out, while basically everything else was sealed from me. I suggest we might be stepping into a trap, Sergeant. Even still, I think we should spring their trap with a sure stomp.
+	sender: Deputy Black (AFTER TIES INVESTIGATION)
+
+
+
+ DAY 5 
+
+	header: Excellent work, Sergeant
+	text: Captain Schwartz has been detained due to his ties with the corrupt politician Pikimusta. I'm writing you this message to congratulate you on the successful investigation. I see a bright future in front of you.
+	sender: Liutenant Stadt (good ending)
+
+	header: The Investigation Comes To A Close
+	text: Thank you, Sergeant. Your work has paved a way for the future of this country. <b> I'm sure this is the best thing that could've come out of this investigation </b>and am sure, that your help will be needed in the aftermath.
+	sender: Captain Scwhartz (neutral/bad ending(s))
+
+	header: I'm leaving
+	text: You are wrong, the captain is wrong and Black is wrong! Mr Grau is right and he'll help us reach a utopia without corruption or inequality. I've decided to join him and leave to police force for good. Goodbye
+	sender: Molly Weiß (Weiß bad ending)
+
+	header: I'm leaving
+	text: I've come to despise the police work in this town. I thought we relied on facts and truth, but it seems that's not the case. I cannot in good conscience remain at this establishment with what I suspect to be true.
+	sender: Jack Black (Black bad ending)
+
+ 
+
+
+NEWS
+
+ DAY 1
+
+	header: Leader of the Future Party In Jail!
+	text: After the long, public trial comes to a close, leader of the Future party, Ms Grau, finds herself in jail for her crimes. "This'll set our party back years in terms of popularity" says a Future party representative (anonymously). The trial was . The accuser and leader of the People's Party, Mr Pikimusta, says "Truly despicable, what that woman did. She's not alone on this, either. <u>I promise you her husband played a large part in this!</u> His turn in the spotlight of justice too shall come soon. The Future party isn't innocent either!". None of what Mr Pikimusta says has been proven or disproven quite yet. Only time and new evidence will tell who Mr Pikimusta and his lawyers look to shine a light on next.
+	writer: Ash Slate
+
+	header: Suspicious Activity at Government Weapons Storages
+	text: Hooded figures have been spotted around strategic army buildings. These individuals are said to be clad in dark green hoodies that shroud their faces. The army has refused to comment on the issue so far.
+	writer: Gainsboro - alias
+
+DAY 2
+
+	header: Government Scandal: Drugs, Money, Politicians and Hard Party
+	text: After winning in the court and having conveniantly gotten rid of his primary opponent in the coming elections, Mr Pikimusta has been reported drinking and partying hard with some wealthy government officials.
+	writer: Ash Slate
+
+	header: Tomorrows fishing contest, brought to you by Mr Pikimusta and The People's Party
+	text: Tomorrow, on Wednesday, a fishing contest will be held in the private forest owned by the Pikimustas. Though you can't become a contestant anymore, everybody is invited to take part and enjoy some fishing related fun. There'll be roulettes, shops and all sorts of wacky things for the entire family!
+	writer: Silver Scrape
+
+	header: Scam Mail Targets Government
+	text: We've recieved reports of multiple government agencies being sent "phishing" emails. It is currently unknown who is behind this, but authorities are looking into the issue. "This is new to us, but no information has been leaked", says Lieutenant Stadt from the police force.
+	writer: Gainsboro - alias
+
+	
+
+
+DAY 3
+
+	header: Fire at the Fishing Contest
+	text: Fires burn spirits at the fishing contest. The contest has been prematurely ended and people have been sent home, freaked out by the devastation. The founders of the event assure everyone that the situation is under control and the reason for the fires has been all but solved. They didn't disclose more about the culprit, but many speculate the one behind the fire is none other than the husband of the Ms Grau, Mr Grau!
+	writer: Silver Scrape
+
+	header: The People's Party Celebrates
+	text: The ministers and council members of the People's Party are holding an invite only high class party while a fishing contest they set up in a forest their leader, Mr Pikimusta, owns is burning. The celebration's reasons aren't disclosed to reporters, but some assume it has to do with the favourable ending of Ms Grau's trial.
+	writer: Ash Slate
+
+	header: Poisoned Luxury Goods
+	text: Many wine and cheese enthusiasts claim their products have been lathered in poison, as they claim their healths decline. "They're trying to get rid of the bourgeoisie! I mean th-", says a well paid businessman, known for their excess cheese spendings. "It's probably just a faulty shipment. Maybe a truck didn't have the proper cooling, maybe some bottle were badly sealed." says another expert wine collector. Whoever is behind this obviously wants some one to go away.
+	writer: Tundora Lead
+
+DAY 4
+
+	header: The Future Party Responds
+	text: The future party claims their leader, Ms Grau, was set up and as they arm for a re-trial do determine her and her party's fate.
+	writer: Ash Slate
+
+
+DAY 5
+	header: Revolution!
+	text: Small, coordinated groups of men and women, clad in green hoodies are taking the city of Crimebourgistan by storm. As panic spreads, a new face catches the gaze of everyone in the world: Mr Grau. The husband of the imprisoned leader of the Future party is leading the charge for a new world, free of corruption. The revolutionaries rally their flags behind the wrongful imprisonment of the noble Ms Grau, seeking to set her free. And she was set free: a still unknown possible third actor took the life of Ms Grau, turning her into a martyr for the revolutionaries.
+	writer: Weiß bad ending (3/4)
+
+	header: Man Behind Fires Brought To Justice, Deputy Resigns
+	text: The husband of Ms Grau, Mr Grau, has been taken in by the Crimebourgistan police department and charged with alot, including arson. "I told you so!" exclaims Mr Pikimusta, foretelling Mr Grau's downfall. While most celebrate that justice has found its way to the city, the police department suffers the loss of deputy, who worked on bringing Grau to light. 
+	writer: Black bad ending (4/4)
+
+	header: Mr Grau Brought To Justice; Mr Pikimusta Smiles
+	text: The husband of Ms Grau, Mr Grau, has been taken in by the Crimebourgistan police department and charged with alot, including arson. "I told you he was a rotten egg!" exclaims Mr Pikimusta, foretelling Mr Grau's downfall.
+	writer: neutral ending (2/4)
+
+	header: Major Corruption in the Government Come To Light!
+	text: basically captain is fired, Mr Pikimusta is evil, Mr Grau is evil and Ms Grau is innocent and everyone gets what they deserve and the People's Party suffer a devastating loss amidst scandal.
+	writer: good ending (1/4)

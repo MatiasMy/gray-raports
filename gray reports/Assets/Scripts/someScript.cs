@@ -11,18 +11,6 @@ public class someScript : MonoBehaviour, IPointerClickHandler
     [SerializeField] private TMP_Text[] texts;
     void Start()
     {
-        if (deputyScript.savedPosts.Count > 0) // this to be tested when days added--------------------------
-        {
-            postListTemp = new List<postData>(deputyScript.savedPosts);
-        }
-        foreach (postData post in postListTemp)
-        {
-            bool exists = postListTemp.Exists(p => p.ID == post.ID);
-
-            if (!exists)
-                postList.Add(post);
-        }//-------------------------------------------------------- should save previous some posts and display them, removing duplicates
-
         for (int i = 0; i < postList.Count; i++)
         {
             postList[i].ID = i;
@@ -39,7 +27,6 @@ public class someScript : MonoBehaviour, IPointerClickHandler
             TMP_Text text = posts[i].transform.Find("description").GetComponent<TMP_Text>();
             text.text = postList[i].textWithLink;
         }
-        deputyScript.savedPosts = new List<postData>(postList);
     }
     public void OnPointerClick(PointerEventData eventData)
     {

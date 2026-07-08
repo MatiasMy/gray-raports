@@ -9,8 +9,11 @@ public class newsScript : MonoBehaviour, IPointerClickHandler
 {
     public List<Image> articles;
     [SerializeField] private TMP_Text[] texts;
+    public Sprite comicOfTheDay;
+    public Image comic;
     void Start()
     {
+        comic.sprite = comicOfTheDay;
         for (int i = 0; i < newsList.Count; i++)
         {
             newsList[i].ID = i;
@@ -24,6 +27,21 @@ public class newsScript : MonoBehaviour, IPointerClickHandler
             textTxt.text = newsList[i].text;
             TMP_Text fromTxt = articles[i].transform.Find("writerText").GetComponent<TMP_Text>();
             fromTxt.text = newsList[i].writer;
+        }
+    }
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            float num = Random.Range(0, 10);
+            if (1f == num)
+            {
+                gameScript.Instance.speakThis("Hmmmm");
+            }
+            else if (10f == num)
+            {
+                gameScript.Instance.speakThis("Intresting");
+            }
         }
     }
     public void OnPointerClick(PointerEventData eventData)

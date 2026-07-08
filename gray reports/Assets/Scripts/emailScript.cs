@@ -14,15 +14,23 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
     public GameObject desktop;
     public TMP_Dropdown headerDropdown;
     public TMP_Dropdown header1;
-    public TMP_Dropdown header2;
     public TMP_Dropdown toSend;
     public TMP_Text captainsNameTxt;
     public Button sendButton;
     public float timeToWait;
     public emailData email1;
-    private bool alreadySent = false;
+    public emailData email2;
+    public bool isThereTwoEmails = false;
+    private int alreadySent = 0;
     public static List<string> savedHeaders = new List<string>();
     private List<string> missionsToBe = new List<string>();
+    public AudioSource audioSource;
+    public AudioClip receivedEmail;
+    public AudioClip sentAnEmail;
+    public bool startOfGame = false;
+    private List<string> sentmissions = new List<string>();
+    private bool reportDone = false;
+    public bool isThereAnEmail;
     void Start()
     {
         missionsToBe.Add("jokemission");
@@ -45,25 +53,14 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
     }
     public void receiveCaptainsEmail(string emailAnswer)
     {
-        string[] parts = emailAnswer.Split('/');
-        emailData newEmail = new emailData
+        Debug.Log(emailAnswer);
+        if (emailAnswer == "")
         {
-            header = parts[0],
-            readHeader = parts[1],
-            text = parts[2],
-            from = parts[3],
-            ID = 0
-        };
-        emailList.Add(newEmail);
-    }
-    public void receivedDeputyEmails(string emailAnswer)
-    {
-        emailAnswer = emailAnswer.Substring(0, emailAnswer.Length - 1);
-        string[] emails = emailAnswer.Split('|');
-
-        foreach (string email in emails)
+            return;
+        }
+        else
         {
-            string[] parts = email.Split('/');
+            string[] parts = emailAnswer.Split('-');
             emailData newEmail = new emailData
             {
                 header = parts[0],
@@ -75,12 +72,44 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
             emailList.Add(newEmail);
         }
     }
+    public void receivedDeputyEmails(string emailAnswer)
+    {
+        if (emailAnswer == "")
+        {
+            return;
+        }
+        else
+        {
+            Debug.Log(emailAnswer);
+            emailAnswer = emailAnswer.Substring(0, emailAnswer.Length - 1);
+            string[] emails = emailAnswer.Split('|');
+
+            foreach (string email in emails)
+            {
+                string[] parts = email.Split('-');
+                emailData newEmail = new emailData
+                {
+                    header = parts[0],
+                    readHeader = parts[1],
+                    text = parts[2],
+                    from = parts[3],
+                    ID = 0
+                };
+                emailList.Add(newEmail);
+            }
+        }
+    }
     public void openEmail(int emailID)
     {
-        if (!alreadySent)
+        if (emailID == 1 && startOfGame)
         {
+            gameScript.Instance.speakThis("I can save underlined text for reports");
+            startOfGame = false;
+        }
+        if (alreadySent == 0 && isThereAnEmail)
+        {
+            alreadySent = 1;
             StartCoroutine(newEmail());
-            alreadySent = true;
         }
         for (int i = 0; i < emailList.Count; i++)
         {
@@ -107,11 +136,17 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
     }
     public void closeEmailApp()
     {
+        if (alreadySent == 1)
+            alreadySent = 0;
         emailApp.SetActive(false);
         desktop.SetActive(true);
     }
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (reportDone)
+        {
+            return;
+        }
         TMP_Text text = readEmailBackGround.transform.Find("header").GetComponent<TMP_Text>();
         text.ForceMeshUpdate();
         int linkIndex = TMP_TextUtilities.FindIntersectingLink(
@@ -163,8 +198,6 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
         {
             header1.value = 0;
             header1.RefreshShownValue();
-            header2.value = 0;
-            header2.RefreshShownValue();
         }
         sendButton.gameObject.SetActive(true);
         readEmailBackGround.gameObject.SetActive(false);
@@ -177,8 +210,6 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
                 headerDropdown.RefreshShownValue();
                 header1.options.Add(new TMP_Dropdown.OptionData(header));
                 header1.RefreshShownValue();
-                header2.options.Add(new TMP_Dropdown.OptionData(header));
-                header2.RefreshShownValue();
             }
         }
     }
@@ -189,14 +220,12 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
         if (selectedOption == "report")
         {
             header1.gameObject.SetActive(true);
-            header2.gameObject.SetActive(true);
             toSend.gameObject.SetActive(false);
             captainsNameTxt.gameObject.SetActive(true);
         }
         if (selectedOption != "report")
         {
             header1.gameObject.SetActive(false);
-            header2.gameObject.SetActive(false);
             toSend.gameObject.SetActive(true);
             captainsNameTxt.gameObject.SetActive(false);
         }
@@ -206,17 +235,28 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
         string selectedOption = headerDropdown.options[headerDropdown.value].text;
         if (selectedOption == "report")
         {
-            if (header1.value == 0 || header2.value == 0)
+            if (header1.value == 0)
             {
-                gameScript.Instance.speakThis("My report should contain two subtitles");
+                gameScript.Instance.speakThis("I need to actually report something");
                 return;
             }
             string header1Text = header1.options[header1.value].text;
             endingDataScript.headers.Add(header1Text);
-            string header2Text = header2.options[header2.value].text;
-            endingDataScript.headers.Add(header2Text);
-            captainAnswerScript.reportList.Add(header1Text + header2Text);
-            gameScript.Instance.speakThis("Thats it for today, time to head for home");
+            captainAnswerScript.reportList.Add(header1Text);
+            audioSource.PlayOneShot(sentAnEmail);
+
+            headerDropdown.ClearOptions();
+            headerDropdown.options.Add(new TMP_Dropdown.OptionData("report"));
+            headerDropdown.value = 0;
+            headerDropdown.RefreshShownValue();
+            header1.ClearOptions();
+            header1.RefreshShownValue();
+            savedHeaders.Clear();
+
+            gameScript.Instance.speakThis("Thats it for today, time to logout and head home");
+            gameScript.reportDone = true;
+
+            reportDone = true;
         }
         else
         {
@@ -229,8 +269,19 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
                 gameScript.Instance.speakThis("I should select who to send this to");
                 return;
             }
+            else if (toSend.options[toSend.value].text == "no options")
+            {
+                gameScript.Instance.speakThis("I have no emails to send this to");
+                return;
+            }
+            else if (sentmissions.Contains(toDoString))
+            {
+                gameScript.Instance.speakThis("I already sent someone to investigate that");
+                return;
+            }
             else
             {
+                sentmissions.Add(toDoString);
                 string mission = toDoString + toSendString;
                 foreach (string Mission in missionsToBe)
                 {
@@ -241,8 +292,9 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
                     }
                     else
                     {
-                        gameScript.Instance.speakThis("pussy");
+                        audioSource.PlayOneShot(sentAnEmail);
                         deputyScript.toDoList.Add(mission);
+                        endingDataScript.deputies.Add(toSendString);
                         float num = Random.Range(0, 10);
                         if (1f == num)
                         {
@@ -293,6 +345,7 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
     }
     private IEnumerator newEmail()
     {
+        yield return new WaitForSeconds(timeToWait);
         Button emptyButton = null;
         foreach (Button button in emailButtons)
         {
@@ -303,13 +356,42 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
                 break;
             }
         }
-        yield return new WaitForSeconds(timeToWait);
         foreach (Button button in emailButtons)
         {
             if (button.name == emptyButton.name)
             {
                 button.gameObject.SetActive(true);
                 emailList.Add(email1);
+                audioSource.PlayOneShot(receivedEmail);
+                alreadySent = 2;
+                if (isThereTwoEmails)
+                {
+                    StartCoroutine(anotherNewEmail());
+                }
+                break;
+            }
+        }
+    }
+    private IEnumerator anotherNewEmail()
+    {
+        yield return new WaitForSeconds(timeToWait * 1.5f);
+        Button emptyButton = null;
+        foreach (Button button in emailButtons)
+        {
+            if (button.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                button.GetComponentInChildren<TextMeshProUGUI>().text = email2.header;
+                emptyButton = button;
+                break;
+            }
+        }
+        foreach (Button button in emailButtons)
+        {
+            if (button.name == emptyButton.name)
+            {
+                button.gameObject.SetActive(true);
+                emailList.Add(email2);
+                audioSource.PlayOneShot(receivedEmail);
                 break;
             }
         }
