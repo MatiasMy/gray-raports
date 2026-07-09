@@ -11,6 +11,8 @@ public class newsScript : MonoBehaviour, IPointerClickHandler
     [SerializeField] private TMP_Text[] texts;
     public Sprite comicOfTheDay;
     public Image comic;
+    public AudioClip savedHeader;
+    public AudioSource audioSource;
     void Start()
     {
         comic.sprite = comicOfTheDay;
@@ -56,7 +58,7 @@ public class newsScript : MonoBehaviour, IPointerClickHandler
             if (linkIndex != -1)
             {
                 TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
-
+                audioSource.PlayOneShot(savedHeader);
                 switch (linkInfo.GetLinkID())
                 {
                     case "a":

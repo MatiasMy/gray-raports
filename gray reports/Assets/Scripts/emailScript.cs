@@ -21,19 +21,20 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
     public emailData email1;
     public emailData email2;
     public bool isThereTwoEmails = false;
-    private int alreadySent = 0;
+    public static int alreadySent = 0;
     public static List<string> savedHeaders = new List<string>();
     private List<string> missionsToBe = new List<string>();
     public AudioSource audioSource;
     public AudioClip receivedEmail;
     public AudioClip sentAnEmail;
+    public AudioClip savedHeader;
     public bool startOfGame = false;
     private List<string> sentmissions = new List<string>();
     private bool reportDone = false;
     public bool isThereAnEmail;
     void Start()
     {
-        missionsToBe.Add("jokemission");
+        missionsToBe.Add("jokemission"); //just so a foreach later will run
         string captainAnswer = captainAnswerScript.Instance.captainEmail();
         receiveCaptainsEmail(captainAnswer);
         string emailAnswer = deputyScript.Instance.deputyEmails();
@@ -53,14 +54,13 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
     }
     public void receiveCaptainsEmail(string emailAnswer)
     {
-        Debug.Log(emailAnswer);
         if (emailAnswer == "")
         {
             return;
         }
         else
         {
-            string[] parts = emailAnswer.Split('-');
+            string[] parts = emailAnswer.Split('_');
             emailData newEmail = new emailData
             {
                 header = parts[0],
@@ -86,7 +86,7 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
 
             foreach (string email in emails)
             {
-                string[] parts = email.Split('-');
+                string[] parts = email.Split('_');
                 emailData newEmail = new emailData
                 {
                     header = parts[0],
@@ -156,7 +156,7 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
         if (linkIndex != -1)
         {
             TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
-
+            audioSource.PlayOneShot(savedHeader);
             switch (linkInfo.GetLinkID())
             {
                 case "a":
@@ -258,7 +258,7 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
 
             reportDone = true;
         }
-        else
+        else // sending deputie on a mission
         {
             toSend.RefreshShownValue();
             string toSendString = toSend.options[toSend.value].text;

@@ -146,10 +146,17 @@ public class gameScript : MonoBehaviour
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneIndex + 1);
+            reportDone = false;
+            emailScript.alreadySent = 0;
         }
         else
         {
             speakThis("I need to finish my report before logging out");
         }
+    }
+    public void leavework()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 }

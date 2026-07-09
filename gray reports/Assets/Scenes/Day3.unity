@@ -10709,6 +10709,8 @@ MonoBehaviour:
   - {fileID: 1513052814}
   comicOfTheDay: {fileID: 21300000, guid: 65c3dc16edb40c248aadcf496d916d7d, type: 3}
   comic: {fileID: 1957828166}
+  savedHeader: {fileID: 0}
+  audioSource: {fileID: 0}
   newsList:
   - header: Fire at the Fishing Contest
     readHeader: <link="a"><u>Fire at the Fishing Contest</u></link>
@@ -10724,9 +10726,9 @@ MonoBehaviour:
     readHeader: <link="b"><u>The People's Party Celebrates</u></link>
     text: The ministers and council members of the People's Party are holding an
       invite only high class party while a fishing contest they set up in a forest
-      their leader, Mr Pikimusta, owns is burning. The celebration's reasons aren't
-      disclosed to reporters, but some assume it has to do with the favourable ending
-      of Ms Grau's trial.
+      owned by the party leader, Mr Pikimusta, is burning. The celebration's reasons
+      aren't disclosed to reporters, but some assume it has to do with the favourable
+      ending of Ms Grau's trial.
     writer: Ash Slate
     ID: 1
   - header: Poisoned Luxury Goods
@@ -10739,6 +10741,13 @@ MonoBehaviour:
       another expert wine collector. Whoever is behind this obviously wants some
       one to go away.
     writer: Tundora Lead
+    ID: 1
+  - header: Failed concert
+    readHeader: Failed concert
+    text: Yesterday DJ blueberry shot hosted a concert that failed. The tickets were
+      free, the food and drinks were free yet nobody showerd up! DJ blueberry shot
+      was later seen drunk yelling at the docks.
+    writer: Jenny Moonrounder
     ID: 1
 --- !u!1 &525677431
 GameObject:
@@ -16419,7 +16428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Captain Charles Schwarz
+  m_text: 'Lieutenant Stadt '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ab0633128201eb4089073ac522780af, type: 2}
   m_sharedMaterial: {fileID: 8858303254043988953, guid: 6ab0633128201eb4089073ac522780af, type: 2}
@@ -17349,6 +17358,7 @@ GameObject:
   - component: {fileID: 857408843}
   - component: {fileID: 857408844}
   - component: {fileID: 857408845}
+  - component: {fileID: 857408846}
   m_Layer: 0
   m_Name: gamePlayer
   m_TagString: Untagged
@@ -17433,7 +17443,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17517,6 +17527,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &857408846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857408840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd3bdbba713539439e8324eb725913d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endofgame: 0
 --- !u!1 &858701514
 GameObject:
   m_ObjectHideFlags: 0
@@ -18771,8 +18794,54 @@ MonoBehaviour:
   - {fileID: 1824445763}
   - {fileID: 627614484}
   - {fileID: 1135857942}
+  savedHeader: {fileID: 0}
+  audioSource: {fileID: 0}
   postListTemp: []
   postList:
+  - image: {fileID: 21300000, guid: ea201584c40d0d34da555e3af5c154e6, type: 3}
+    textWithLink: Feeling cute, might delete later
+    text: 
+    profileName: Jackson007
+    profilePicture: {fileID: 21300000, guid: f3a1f0cb6fc13944ca06ebb772b709be, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 343373aae5dc4da4eb45806a2b4edaa4, type: 3}
+    textWithLink: <link="b"><u>Injustice!</u></link> I say injustice, this is injustice.
+      today we're holding a protest against the wrongful prisonment of Ms Grau, the
+      head of The future party
+    text: Injustice!
+    profileName: Sally Morgen
+    profilePicture: {fileID: 21300000, guid: eaa35743a67ed9b4ab45786c5a607fa2, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: ed2712e8b9b8f2a4f8c1db5560db36e6, type: 3}
+    textWithLink: Got job
+    text: 
+    profileName: John Workman
+    profilePicture: {fileID: 21300000, guid: 52fd5fdf03a9b914485a2da0b1cbe46e, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: ade0dcdd8000800489f789cab0f4a541, type: 3}
+    textWithLink: Liekinheitin
+    text: 
+    profileName: "myyr\xE4"
+    profilePicture: {fileID: 21300000, guid: e798f453e7838ba48847943bd5830c83, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 44fbfd8c3573f6840a10f09a81f78c53, type: 3}
+    textWithLink: HOLY SHIT, im finalli engane #summerweeding
+    text: 
+    profileName: DJ blueberry shot
+    profilePicture: {fileID: 21300000, guid: 5530ccdc5b8427949adb520c362fa86e, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 4ff2190a6b3ebb1409aac21ffa4828ea, type: 3}
+    textWithLink: olololololololol
+    text: 
+    profileName: The ultimate loller
+    profilePicture: {fileID: 21300000, guid: c9b1f94d234895045ab54619c55c3dc8, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 5e31d083a1420e6489196c02621c59c5, type: 3}
+    textWithLink: Hi, im new here, want to be friends? leave a like
+    text: 
+    profileName: Unknown
+    profilePicture: {fileID: 21300000, guid: 2f7c5ebd43511204cb18e617e4cb21cd, type: 3}
+    ID: 0
   - image: {fileID: 21300000, guid: 04e50c39855b7b148b92156a7724f874, type: 3}
     textWithLink: magnificent fish
     text: 
@@ -21836,12 +21905,10 @@ MonoBehaviour:
   sendButton: {fileID: 1341474952}
   timeToWait: 6.92
   email1:
-    header: Graffiti
-    readHeader: <link="d"><u>Graffiti</u></link>
-    text: Good morning sargent, I heard about the new case you got, this might be
-      of interest to you. Some graffiti has been painted across the street to our
-      station. It seems to be some kind of statement against our department.
-    from: Lieutenant Stadt
+    header: 
+    readHeader: 
+    text: 
+    from: 
     ID: 0
   email2:
     header: Manpower For The Case
@@ -21854,6 +21921,7 @@ MonoBehaviour:
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
+  savedHeader: {fileID: 0}
   startOfGame: 0
   isThereAnEmail: 0
   emailList: []
@@ -35625,7 +35693,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: no options
+    - m_Text: "Deputy Wei\xDF"
+      m_Image: {fileID: 0}
+    - m_Text: Deputy Black
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -38171,7 +38241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -40403,7 +40473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: edc4b402494f74944a10ee6d86c8f3f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

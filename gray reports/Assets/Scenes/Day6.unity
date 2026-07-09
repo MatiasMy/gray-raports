@@ -10709,43 +10709,21 @@ MonoBehaviour:
   - {fileID: 1513052814}
   comicOfTheDay: {fileID: 21300000, guid: 65c3dc16edb40c248aadcf496d916d7d, type: 3}
   comic: {fileID: 1957828166}
+  savedHeader: {fileID: 0}
+  audioSource: {fileID: 0}
   newsList:
-  - header: Leader of the Future Party In Jail!
-    readHeader: <link="a"><u>Leader of the Future Party In Jail!</u></link>
-    text: After the long, public trial comes to a close, leader of the Future party,
-      Ms Grau, finds herself in jail for her crimes. "This'll set our party back
-      years in terms of popularity" says a Future party representative (anonymously).
-      The trial was . The accuser and leader of the People's Party, Mr Pikimusta,
-      says "Truly despicable, what that woman did. She's not alone on this, either.I
-      promise you her husband played a large part in this! His turn in the spotlight
-      of justice too shall come soon. The Future party isn't innocent either!". None
-      of what Mr Pikimusta says has been proven or disproven quite yet. Only time
-      and new evidence will tell who Mr Pikimusta and his lawyers look to shine a
-      light on next.
+  - header: A lost cat
+    readHeader: A lost cat
+    text: A cat has been lost, if you see a black cat call 123 321 6767 to tell where
+      the cat is.
+    writer: Jenny moonrounder
+    ID: 1
+  - header: Shots heard at the docks
+    readHeader: Shots heard at the docks
+    text: Yesterday, shot could have been heard near the docks and police seen to
+      be rushing there. Were still unsure of the situation but it may be related
+      to the stolen weapons.
     writer: Ash Slate
-    ID: 1
-  - header: Heat wave
-    readHeader: Heat wave
-    text: All time highs in the tempature department, we could have prevented this!
-      Climate change keeps destroying our nature and making everyday life harder.
-      Its getting so bad that 13 people have died due to heat.
-    writer: Jenny Moonrounder
-    ID: 1
-  - header: Suspicious Activity at Government Weapons Storages
-    readHeader: <link="c"><u>Suspicious Activity at Government Weapons Storages</u></link>
-    text: Hooded figures have been spotted around strategic army buildings. These
-      individuals are said to be clad in dark green hoodies that shroud their faces.
-      The army has refused to comment on the issue so far.
-    writer: Gainsboro - alias
-    ID: 1
-  - header: Food delivery robot stuck
-    readHeader: Food delivery robot stuck
-    text: A food devilery robot got stuck in a ditch yesterday evening. it was brutally
-      battered and the food inside was taken. Witnesses say that the assaulters were
-      teenagers and that the robot looked sad while it was helpless to defend itself.
-      This shows signs of deeprooted issues in our city, should someone do something
-      about it?
-    writer: Jessica Sonder
     ID: 1
 --- !u!1 &525677431
 GameObject:
@@ -17356,6 +17334,7 @@ GameObject:
   - component: {fileID: 857408843}
   - component: {fileID: 857408844}
   - component: {fileID: 857408845}
+  - component: {fileID: 857408846}
   m_Layer: 0
   m_Name: gamePlayer
   m_TagString: Untagged
@@ -17440,7 +17419,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17524,6 +17503,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &857408846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857408840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd3bdbba713539439e8324eb725913d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endofgame: 0
 --- !u!1 &858701514
 GameObject:
   m_ObjectHideFlags: 0
@@ -18778,8 +18770,127 @@ MonoBehaviour:
   - {fileID: 1824445763}
   - {fileID: 627614484}
   - {fileID: 1135857942}
+  savedHeader: {fileID: 0}
+  audioSource: {fileID: 0}
   postListTemp: []
   postList:
+  - image: {fileID: 21300000, guid: 381a602f0e7dbe84eba1924a1fa57822, type: 3}
+    textWithLink: I saw a bat tonight
+    text: 
+    profileName: doc vampirian
+    profilePicture: {fileID: 21300000, guid: 89078aaff3053ea4a868ee20ed2f73de, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 5e31d083a1420e6489196c02621c59c5, type: 3}
+    textWithLink: still no friends:(
+    text: 
+    profileName: Unknown
+    profilePicture: {fileID: 21300000, guid: 2f7c5ebd43511204cb18e617e4cb21cd, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 744a4f26f3158974aa6747bc62975087, type: 3}
+    textWithLink: 
+    text: 
+    profileName: The ultimate loller
+    profilePicture: {fileID: 21300000, guid: c9b1f94d234895045ab54619c55c3dc8, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: b7e38038798355d46b3cf66089a85e4e, type: 3}
+    textWithLink: on the beach!
+    text: 
+    profileName: bob
+    profilePicture: {fileID: 21300000, guid: 27fe50d2fe537f444bea9794913d41d2, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: a4c99fc1b3d305a4b94fd55db4863a64, type: 3}
+    textWithLink: you get used to everything except and icicle in your ass
+    text: 
+    profileName: The ultimate loller
+    profilePicture: {fileID: 21300000, guid: c9b1f94d234895045ab54619c55c3dc8, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 99df10a9ce8029d4e9aa5051f5b7720b, type: 3}
+    textWithLink: this tree i took
+    text: 
+    profileName: Jack ahhman
+    profilePicture: {fileID: 21300000, guid: 47fa3f7d18d46ec45b99fcb6f376aba0, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 46bb53b32bc0cba49a163ffe8ceaa2d1, type: 3}
+    textWithLink: Going on a trip!
+    text: 
+    profileName: Jackon007
+    profilePicture: {fileID: 21300000, guid: f3a1f0cb6fc13944ca06ebb772b709be, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: c148ef4019ba843459473f125e1bd565, type: 3}
+    textWithLink: Read the news yesterday, not exited to open this compMachine as
+      its broken already
+    text: 
+    profileName: GARRYgamer
+    profilePicture: {fileID: 21300000, guid: 0c6fbd67f55cd1647a90ba28b630da4e, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 649f5bbe6173ce54d80488df143f3255, type: 3}
+    textWithLink: New bottle, new me
+    text: 
+    profileName: Susan Schwarz
+    profilePicture: {fileID: 21300000, guid: f8b449328449a3540b7a4e9d359c7be5, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 7dd210d097fe1784fa4f554aaec2add5, type: 3}
+    textWithLink: new fish!
+    text: 
+    profileName: Randy Fisher
+    profilePicture: {fileID: 21300000, guid: ab36dbbe7e9842246848491bf7306775, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 7315cb56c856697428fdb4c74e494ba5, type: 3}
+    textWithLink: i drew
+    text: 
+    profileName: Jerry ahhman
+    profilePicture: {fileID: 21300000, guid: 88fc89018dd769443b9f4423c9897f70, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: f493ca02b85662e4eae529e4a7ba451e, type: 3}
+    textWithLink: Birthdaygirl me!
+    text: 
+    profileName: girly girl girl
+    profilePicture: {fileID: 21300000, guid: 5a3578eebde0de046818a70691a46f8a, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: ea201584c40d0d34da555e3af5c154e6, type: 3}
+    textWithLink: Feeling cute, might delete later
+    text: 
+    profileName: Jackson007
+    profilePicture: {fileID: 21300000, guid: f3a1f0cb6fc13944ca06ebb772b709be, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 343373aae5dc4da4eb45806a2b4edaa4, type: 3}
+    textWithLink: Injustice! I say injustice, this is injustice. today we're holding
+      a protest against the wrongful prisonment of Ms Grau, the head of The future
+      party
+    text: Injustice!
+    profileName: Sally Morgen
+    profilePicture: {fileID: 21300000, guid: eaa35743a67ed9b4ab45786c5a607fa2, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: ed2712e8b9b8f2a4f8c1db5560db36e6, type: 3}
+    textWithLink: Got job
+    text: 
+    profileName: John Workman
+    profilePicture: {fileID: 21300000, guid: 52fd5fdf03a9b914485a2da0b1cbe46e, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: ade0dcdd8000800489f789cab0f4a541, type: 3}
+    textWithLink: Liekinheitin
+    text: 
+    profileName: "myyr\xE4"
+    profilePicture: {fileID: 21300000, guid: e798f453e7838ba48847943bd5830c83, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 44fbfd8c3573f6840a10f09a81f78c53, type: 3}
+    textWithLink: HOLY SHIT, im finalli engane #summerweeding
+    text: 
+    profileName: DJ blueberry shot
+    profilePicture: {fileID: 21300000, guid: 5530ccdc5b8427949adb520c362fa86e, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 4ff2190a6b3ebb1409aac21ffa4828ea, type: 3}
+    textWithLink: olololololololol
+    text: 
+    profileName: The ultimate loller
+    profilePicture: {fileID: 21300000, guid: c9b1f94d234895045ab54619c55c3dc8, type: 3}
+    ID: 0
+  - image: {fileID: 21300000, guid: 5e31d083a1420e6489196c02621c59c5, type: 3}
+    textWithLink: Hi, im new here, want to be friends? leave a like
+    text: 
+    profileName: Unknown
+    profilePicture: {fileID: 21300000, guid: 2f7c5ebd43511204cb18e617e4cb21cd, type: 3}
+    ID: 0
   - image: {fileID: 21300000, guid: 04e50c39855b7b148b92156a7724f874, type: 3}
     textWithLink: magnificent fish
     text: 
@@ -21841,14 +21952,13 @@ MonoBehaviour:
   toSend: {fileID: 1758288566}
   captainsNameTxt: {fileID: 811796797}
   sendButton: {fileID: 1341474952}
-  timeToWait: 6.92
+  timeToWait: 4.34
   email1:
-    header: Graffiti
-    readHeader: <link="d"><u>Graffiti</u></link>
-    text: Good morning sargent, I heard about the new case you got, this might be
-      of interest to you. Some graffiti has been painted across the street to our
-      station. It seems to be some kind of statement against our department.
-    from: Lieutenant Stadt
+    header: Shooting at the docks!
+    readHeader: <link="c"><u>Shooting at the docks!</u></link>
+    text: Theres shooting at the docks, send one of your deputies to investigate
+      it!
+    from: Captain Schwarz
     ID: 0
   email2:
     header: Manpower For The Case
@@ -21861,26 +21971,10 @@ MonoBehaviour:
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
-  startOfGame: 1
-  emailList:
-  - header: Cutting Edge Computers On Sale!
-    readHeader: Cutting edge computers
-    text: Buy a new CompMachine95 for only 950$. Sale only lasts for this week, so
-      don't miss out!
-    from: CompMachine Co
-    ID: 0
-  - header: A New Case
-    readHeader: A New Case
-    text: Sergeant, I have a new job for you. I've gotten a request from our dear
-      city of Crimebourgstan to bring question and detain suspect Mr Grau. I expect
-      you to report to me at the end of the day.
-    from: Captain Schwarz
-    ID: 0
-  - header: Update youre firewall
-    readHeader: Update youre firewall
-    text: Update youre firewall it is going to expire on 6.7.2026
-    from: Team Fire wall Fighters
-    ID: 0
+  savedHeader: {fileID: 0}
+  startOfGame: 0
+  isThereAnEmail: 0
+  emailList: []
 --- !u!82 &1043703208
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35649,7 +35743,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: no options
+    - m_Text: "Deputy Wei\xDF"
+      m_Image: {fileID: 0}
+    - m_Text: Deputy Black
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -38195,7 +38291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -40427,7 +40523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 20e84bdc0c17fa142a70bbf722aa00ef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -10709,6 +10709,8 @@ MonoBehaviour:
   - {fileID: 1513052814}
   comicOfTheDay: {fileID: 21300000, guid: 65c3dc16edb40c248aadcf496d916d7d, type: 3}
   comic: {fileID: 1957828166}
+  savedHeader: {fileID: 0}
+  audioSource: {fileID: 0}
   newsList:
   - header: 'Government Scandal: Drugs, Money, Politicians and Hard Party'
     readHeader: '<link="a"><u>Government Scandal: Drugs, Money, Politicians and Hard
@@ -10728,12 +10730,10 @@ MonoBehaviour:
       shops and all sorts of wacky things for the entire family!
     writer: Silver Scrape
     ID: 1
-  - header: Scam Mail Targets Government
-    readHeader: Scam Mail Targets Government
-    text: We've recieved reports of multiple government agencies being sent "phishing"
-      emails. It is currently unknown who is behind this, but authorities are looking
-      into the issue. "This is new to us, but no information has been leaked", says
-      Lieutenant Stadt from the police force.
+  - header: Local parks tree has been cut down
+    readHeader: <link="c"><u>Local parks tree has been cut down</u></link>
+    text: The local parks old tree has been cut down, nobody knows who has done it,
+      maybe act of Local parks tree has been cut down
     writer: Gainsboro - alias
     ID: 1
 --- !u!1 &525677431
@@ -17345,6 +17345,7 @@ GameObject:
   - component: {fileID: 857408843}
   - component: {fileID: 857408844}
   - component: {fileID: 857408845}
+  - component: {fileID: 857408846}
   m_Layer: 0
   m_Name: gamePlayer
   m_TagString: Untagged
@@ -17429,7 +17430,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17513,6 +17514,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &857408846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857408840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd3bdbba713539439e8324eb725913d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endofgame: 0
 --- !u!1 &858701514
 GameObject:
   m_ObjectHideFlags: 0
@@ -18767,6 +18781,8 @@ MonoBehaviour:
   - {fileID: 1824445763}
   - {fileID: 627614484}
   - {fileID: 1135857942}
+  savedHeader: {fileID: 0}
+  audioSource: {fileID: 0}
   postListTemp: []
   postList:
   - image: {fileID: 21300000, guid: 44fbfd8c3573f6840a10f09a81f78c53, type: 3}
@@ -21851,8 +21867,10 @@ MonoBehaviour:
   timeToWait: 6.92
   email1:
     header: A tip for the case
-    readHeader: <link="a"><u>A tip for the case</u></link>
-    text: You should send someone check out Mr Graus old house, could have some leads
+    readHeader: <link="d"><u>A tip for the case</u></link>
+    text: Mr Grau moved yesterday after his wife Ms Grau got locked up. We're not
+      sure where he moved but you could send one of your new deputies to investigate
+      the old house, could have clues.
     from: Lieutenant Stadt
     ID: 0
   email2:
@@ -21865,6 +21883,7 @@ MonoBehaviour:
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
+  savedHeader: {fileID: 0}
   startOfGame: 0
   isThereAnEmail: 1
   emailList:
@@ -35650,7 +35669,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: no options
+    - m_Text: "Deputy Wei\xDF"
+      m_Image: {fileID: 0}
+    - m_Text: Deputy Black
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -38196,7 +38217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

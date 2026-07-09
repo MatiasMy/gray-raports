@@ -9,6 +9,8 @@ public class someScript : MonoBehaviour, IPointerClickHandler
 {
     public List<Image> posts;
     [SerializeField] private TMP_Text[] texts;
+    public AudioClip savedHeader;
+    public AudioSource audioSource;
     void Start()
     {
         for (int i = 0; i < postList.Count; i++)
@@ -40,7 +42,7 @@ public class someScript : MonoBehaviour, IPointerClickHandler
             if (linkIndex != -1)
             {
                 TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
-
+                audioSource.PlayOneShot(savedHeader);
                 switch (linkInfo.GetLinkID())
                 {
                     case "a":

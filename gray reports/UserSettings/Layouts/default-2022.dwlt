@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 281
     height: 664
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 1175
     height: 664
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -674,9 +674,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 530.9593, y: 302.75882, z: 1.9148281}
+    m_Target: {x: 503.14047, y: 263.49954, z: 0.9522165}
     speed: 2
-    m_Value: {x: 530.9593, y: 302.75882, z: 1.9148281}
+    m_Value: {x: 503.14047, y: 263.49954, z: 0.9522165}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -726,9 +726,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 343.97034
+    m_Target: 437.40784
     speed: 2
-    m_Value: 343.97034
+    m_Value: 437.40784
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -790,9 +790,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 98cb0400
-      m_LastClickedID: 314264
-      m_ExpandedIDs: 127dfeffea82feff4e85feffa498feffae9ffeff80a3feff72a9feff72aafeff8ab0feff40b2feff44b8feff24b9feff82c1feff46c2feff4acefeff02cffeff38d1feff4cd1feff60d1feff74d1feffb8d1feff34d7feffecd7feffa4d8feffbe0fffff38a8ffff18fbffff3a75000056770000fc7700001a790000847d0000487f00006a130300485a030026a10300aebd03008af5030064f60300c2fc0300105a04008484040044cb0400
+      m_SelectedIDs: b8e10b00
+      m_LastClickedID: 778680
+      m_ExpandedIDs: e6e3fdfff6e4fdff20e7fdff18e8fdff08e9fdfff8e9fdff6eeffdff68f0fdffc0f1fdff20f3fdff78f4fdffe4f5fdff3cf7fdff9af8fdffd2f9fdff96fdfdff300afeff9414feffa422feffe027feff1c29feff542afeff8c2bfeffc42cfeff002efeff2c34feff8a5efeffe65ffeff2861feff8462feff5e63feff5064feff6465feff0670feffde70feff027dfeff0a7efeff8c7ffeff8a82feff7e83feff7293feff1095feff4a98feff669bfeff4a9efeff14a4feff98a6feff50a7feffcad0feffc8d1feff8ce2feff92ebfeffd4ecfeffb805ffffe006ffff9807ffff5008ffff3009ffff180afffff40affff562affff206effff1e6fffffee71ffffd07effff94acffffecb7ffff46b9ffffa4baffff3abcffffbabdffff58bfffffe6c0ffff80d5ffffcad6ffff18d8ffff6ed9ffff2cdaffff02dcffff6cddfffffedeffff56e0ffffb8e1ffff2ce8ffff1eebffff5aecffff22edffff98eeffff3cf1ffff28f2ffff18fbffff3e75000030a30000acbf000024ea0000483f0100a6580100965b0100f4740100e4770100429101003294010092ad010082b0010008d80100f8da010058f4010048f70100a81002009813020038e8020028ec020082f002008604030076080300d00c0300d4200300c42403001e290300223d0300124103006c45030070590300605d0300ba610300be750300ae790300087e0300aa66040084670400746a0400e26d0400ec830400dc86040012920400a22e05000035050002a0050028ae05004ebc050074ca0500c0e60500e8f40500e04906000658060068740600d09006001c9e0600f69e060054a50600cae50600b42c07001e49070046570700ec8107001290070060ac0700aec80700d6d607006c010800920f08000a3e08006442080040480800304c08008a50080066560800565a0800b05e08008c6408007c680800d66c0800da800800ca84080024890800289d080018a1080072a508009cb8080076b908001aba0800d4bf0800cc1b0a00bc1e0a00507f0a00ae9b0a009e9e0a006e8c0b00969a0b00bea80b00e6b60b0038d30b0064e10b00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -965,18 +965,18 @@ MonoBehaviour:
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 57
   m_LastFolders:
   - Assets/Scenes
-  m_LastFoldersGridSize: -1
+  m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\matia\OneDrive\Tiedostot\gray-raports\gray reports
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0a830000
-    m_LastClickedID: 33546
-    m_ExpandedIDs: 00000000ea820000148300001a0401001e04010000ca9a3bffffff7f
+    m_SelectedIDs: 1a830000
+    m_LastClickedID: 33562
+    m_ExpandedIDs: 00000000f88200002483000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ea820000
+    m_ExpandedIDs: 00000000f8820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1057,7 +1057,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 57
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &16
@@ -1164,7 +1164,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 314264
+  m_LastSelectedObjectID: 778680
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
