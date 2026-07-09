@@ -10736,6 +10736,14 @@ MonoBehaviour:
       maybe act of Local parks tree has been cut down
     writer: Gainsboro - alias
     ID: 1
+  - header: Ray Haymyre set free
+    readHeader: Ray Haymyre set free
+    text: A criminal Ray Haymyre has served his sentence of 3 years. He was improsened
+      after he tried to rob a local diamond stores armored truck moving precious
+      diamonds and stones using his home made plastic explosive. A prisonguard (anonymous)
+      says "wish he wasnt free yet, hes not well in the head".
+    writer: Tundora Lead
+    ID: 1
 --- !u!1 &525677431
 GameObject:
   m_ObjectHideFlags: 0
@@ -17527,6 +17535,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endofgame: 0
+  goodEndingImg: {fileID: 0}
+  neutralEndingImg: {fileID: 0}
+  badEndingImg: {fileID: 0}
+  desc: {fileID: 0}
 --- !u!1 &858701514
 GameObject:
   m_ObjectHideFlags: 0
@@ -21864,7 +21876,7 @@ MonoBehaviour:
   toSend: {fileID: 1758288566}
   captainsNameTxt: {fileID: 811796797}
   sendButton: {fileID: 1341474952}
-  timeToWait: 6.92
+  timeToWait: 2.84
   email1:
     header: A tip for the case
     readHeader: <link="d"><u>A tip for the case</u></link>
@@ -21874,12 +21886,14 @@ MonoBehaviour:
     from: Lieutenant Stadt
     ID: 0
   email2:
-    header: 
-    readHeader: 
-    text: 
-    from: 
+    header: Deputy missions
+    readHeader: Deputy missions
+    text: Send your new deputies on missions by sending them an email, change from
+      report to the subject you want to be investigated and choose who to send! this
+      will help you solve the case
+    from: Lieutenant Stadt
     ID: 0
-  isThereTwoEmails: 0
+  isThereTwoEmails: 1
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}

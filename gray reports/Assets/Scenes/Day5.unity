@@ -10734,6 +10734,18 @@ MonoBehaviour:
       up mid sentence and left. What could this mean?
     writer: Silver Scrape
     ID: 1
+  - header: Car crash, church bell and escaping kiosk
+    readHeader: Car crash, church bell and escaping kiosk
+    text: A red fastBil has crashed in the city center, no one was hurt. The driver
+      was tired after a long shift and after a pedestrian suddenly jumped in the
+      way the driver got spooked and drove into a tree stump. Local church bell falls
+      out of the tower! nobody knows how this happened but it will be in repair for
+      a while now, I will miss waking up to that loud thing. The new popular sausage
+      kiosks breaks and the kiosk started to roll downhill. It finally crashed into
+      a wall and was totally destroyed, our cities moral for sure lowered with this
+      lose.
+    writer: Jenny Moonrouder
+    ID: 1
 --- !u!1 &525677431
 GameObject:
   m_ObjectHideFlags: 0
@@ -17525,6 +17537,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endofgame: 0
+  goodEndingImg: {fileID: 0}
+  neutralEndingImg: {fileID: 0}
+  badEndingImg: {fileID: 0}
+  desc: {fileID: 0}
 --- !u!1 &858701514
 GameObject:
   m_ObjectHideFlags: 0
@@ -21958,7 +21974,7 @@ MonoBehaviour:
       from tomorrow on. Be sure to make good use of them in youre new case.
     from: Lieutenant Stadt
     ID: 0
-  isThereTwoEmails: 1
+  isThereTwoEmails: 0
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}

@@ -17542,6 +17542,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endofgame: 0
+  goodEndingImg: {fileID: 0}
+  neutralEndingImg: {fileID: 0}
+  badEndingImg: {fileID: 0}
+  desc: {fileID: 0}
 --- !u!1 &858701514
 GameObject:
   m_ObjectHideFlags: 0
@@ -21929,7 +21933,7 @@ MonoBehaviour:
   toSend: {fileID: 1758288566}
   captainsNameTxt: {fileID: 811796797}
   sendButton: {fileID: 1341474952}
-  timeToWait: 33.8
+  timeToWait: 19.6
   email1:
     header: sdfsdf21b cxv 2314bdf
     readHeader: sdfsdf21b cxv 2314bdf
@@ -21937,11 +21941,10 @@ MonoBehaviour:
     from: oqij1808u414by
     ID: 0
   email2:
-    header: Manpower For The Case
-    readHeader: Manpower For The Case
-    text: I've assigned two deputies to your case. They'll be under your command
-      from tomorrow on. Be sure to make good use of them in youre new case.
-    from: Lieutenant Stadt
+    header: 1d12d12d1d12
+    readHeader: 1d12d12d1d12
+    text: 12ada80jji67cxv12u8012u8012807uvr78
+    from: 1278df98d57xcxc7
     ID: 0
   isThereTwoEmails: 1
   audioSource: {fileID: 1043703208}
@@ -21949,7 +21952,7 @@ MonoBehaviour:
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
   savedHeader: {fileID: 0}
   startOfGame: 0
-  isThereAnEmail: 0
+  isThereAnEmail: 1
   emailList: []
 --- !u!82 &1043703208
 AudioSource:

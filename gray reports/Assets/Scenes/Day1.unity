@@ -17636,6 +17636,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd3bdbba713539439e8324eb725913d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endofgame: 0
+  goodEndingImg: {fileID: 0}
+  neutralEndingImg: {fileID: 0}
+  badEndingImg: {fileID: 0}
+  desc: {fileID: 0}
 --- !u!1 &858701514
 GameObject:
   m_ObjectHideFlags: 0
@@ -22085,17 +22090,19 @@ MonoBehaviour:
   - header: A New Case
     readHeader: A New Case
     text: Sergeant, I have a new job for you. I've gotten a request from our dear
-      city of Crimebourgstan to bring question and detain suspect Mr Grau. I expect
-      you to report to me at the end of the day. Hes believed to be connected to
-      a beating that took place last week. The person who was assaulted was The peoples
-      parties finance manager, who later said the assaulter threatened to take down
-      the whole party and its leader Mr Pikimusta. Look into this, we have to catch
-      Mr Grau before he does anything worse.
+      city of Crimebourgstan to bring question and detain suspect <b>Mr Grau</b>.
+      I expect you to report to me at the end of the day. Hes believed to be connected
+      to a beating that took place last week. The person who was assaulted was The
+      peoples parties finance manager, who later said the assaulter threatened to
+      take down the whole party and its leader Mr Pikimusta. Look into this, we have
+      to catch Mr Grau before he does anything worse. <b>Save underlined text and
+      send an email report to at the end of the, then you can logout and be back
+      the next day.</b>
     from: Captain Schwarz
     ID: 0
   - header: Update youre firewall
     readHeader: Update youre firewall
-    text: Update youre firewall it is going to expire on 6.7.2026
+    text: Update youre firewall it is going to expire soon
     from: Team Fire wall Fighters
     ID: 0
 --- !u!82 &1043703208
