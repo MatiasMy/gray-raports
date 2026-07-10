@@ -9505,6 +9505,7 @@ RectTransform:
   - {fileID: 639901090}
   - {fileID: 607444119}
   - {fileID: 584536161}
+  - {fileID: 879618160}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10710,7 +10711,7 @@ MonoBehaviour:
   - {fileID: 1513052814}
   comicOfTheDay: {fileID: 21300000, guid: 65c3dc16edb40c248aadcf496d916d7d, type: 3}
   comic: {fileID: 1957828166}
-  savedHeader: {fileID: 8300000, guid: e49874f19fdb7114bbf776cb9e5f53c0, type: 3}
+  savedHeader: {fileID: 8300000, guid: 70302f817c3fe2e4a85598d7076a025f, type: 3}
   audioSource: {fileID: 524250574}
   newsList:
   - header: Leader of the Future Party In Jail!
@@ -10718,13 +10719,12 @@ MonoBehaviour:
     text: After the long, public trial comes to a close, leader of the Future party,
       Ms Grau, finds herself in jail for her crimes. "This'll set our party back
       years in terms of popularity" says a Future party representative (anonymously).
-      The trial was . The accuser and leader of the People's Party, Mr Pikimusta,
-      says "Truly despicable, what that woman did. She's not alone on this, either.I
-      promise you her husband played a large part in this! His turn in the spotlight
-      of justice too shall come soon. The Future party isn't innocent either!". None
-      of what Mr Pikimusta says has been proven or disproven quite yet. Only time
-      and new evidence will tell who Mr Pikimusta and his lawyers look to shine a
-      light on next.
+      The accuser and leader of the People's Party, Mr Pikimusta, says "Truly despicable,
+      what that woman did. She's not alone on this, either.I promise you her husband
+      played a large part in this! His turn in the spotlight of justice too shall
+      come soon. The Future party isn't innocent either!". None of what Mr Pikimusta
+      says has been proven or disproven quite yet. Only time and new evidence will
+      tell who Mr Pikimusta and his lawyers look to shine a light on next.
     writer: Ash Slate
     ID: 1
   - header: Heat wave
@@ -10748,7 +10748,7 @@ MonoBehaviour:
       teenagers and that the robot looked sad while it was helpless to defend itself.
       This shows signs of deeprooted issues in our city, should someone do something
       about it?
-    writer: Jessica Sonder
+    writer: "Jessika Harmaaj\xE4rvi"
     ID: 1
 --- !u!82 &524250574
 AudioSource:
@@ -17489,6 +17489,7 @@ MonoBehaviour:
   timeText: {fileID: 861103037}
   startOfGame: 1
   notif: {fileID: 1848855844}
+  fadeOut: {fileID: 879618161}
 --- !u!4 &857408842
 Transform:
   m_ObjectHideFlags: 0
@@ -18282,6 +18283,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878120229}
   m_CullTransparentMesh: 1
+--- !u!1 &879618159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879618160}
+  - component: {fileID: 879618162}
+  - component: {fileID: 879618161}
+  m_Layer: 5
+  m_Name: fadeout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &879618160
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879618159}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 497833308}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &879618161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879618159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &879618162
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879618159}
+  m_CullTransparentMesh: 1
 --- !u!1 &888978713
 GameObject:
   m_ObjectHideFlags: 0
@@ -18896,7 +18972,7 @@ MonoBehaviour:
   - {fileID: 1824445763}
   - {fileID: 627614484}
   - {fileID: 1135857942}
-  savedHeader: {fileID: 8300000, guid: e49874f19fdb7114bbf776cb9e5f53c0, type: 3}
+  savedHeader: {fileID: 8300000, guid: 70302f817c3fe2e4a85598d7076a025f, type: 3}
   audioSource: {fileID: 911023508}
   postListTemp: []
   postList:
@@ -22061,7 +22137,7 @@ MonoBehaviour:
   email1:
     header: Graffiti
     readHeader: <link="d"><u>Graffiti</u></link>
-    text: Good morning sargent, I heard about the new case you got, this might be
+    text: Good morning sergeant, I heard about the new case you got, this might be
       of interest to you. Some graffiti has been painted across the street to our
       station. It seems to be some kind of statement against our department.
     from: Lieutenant Stadt
@@ -22077,7 +22153,7 @@ MonoBehaviour:
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
-  savedHeader: {fileID: 8300000, guid: e49874f19fdb7114bbf776cb9e5f53c0, type: 3}
+  savedHeader: {fileID: 8300000, guid: 70302f817c3fe2e4a85598d7076a025f, type: 3}
   startOfGame: 1
   isThereAnEmail: 1
   emailList:
@@ -22096,8 +22172,8 @@ MonoBehaviour:
       peoples parties finance manager, who later said the assaulter threatened to
       take down the whole party and its leader Mr Pikimusta. Look into this, we have
       to catch Mr Grau before he does anything worse. <b>Save underlined text and
-      send an email report to at the end of the, then you can logout and be back
-      the next day.</b>
+      send an email report to me at the end of the day, then you can logout and be
+      back the next day.</b>
     from: Captain Schwarz
     ID: 0
   - header: Update youre firewall
@@ -40651,7 +40727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 65c3dc16edb40c248aadcf496d916d7d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

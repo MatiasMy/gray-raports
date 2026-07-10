@@ -9505,6 +9505,7 @@ RectTransform:
   - {fileID: 639901090}
   - {fileID: 607444119}
   - {fileID: 584536161}
+  - {fileID: 1996684449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10563,6 +10564,7 @@ GameObject:
   - component: {fileID: 524250573}
   - component: {fileID: 524250572}
   - component: {fileID: 524250571}
+  - component: {fileID: 524250574}
   m_Layer: 5
   m_Name: timesApp
   m_TagString: Untagged
@@ -10707,17 +10709,17 @@ MonoBehaviour:
   - {fileID: 52944635}
   - {fileID: 662080197}
   - {fileID: 1513052814}
-  comicOfTheDay: {fileID: 21300000, guid: 65c3dc16edb40c248aadcf496d916d7d, type: 3}
+  comicOfTheDay: {fileID: 21300000, guid: 20e84bdc0c17fa142a70bbf722aa00ef, type: 3}
   comic: {fileID: 1957828166}
-  savedHeader: {fileID: 0}
-  audioSource: {fileID: 0}
+  savedHeader: {fileID: 8300000, guid: 70302f817c3fe2e4a85598d7076a025f, type: 3}
+  audioSource: {fileID: 524250574}
   newsList:
   - header: Mr pikimusta causes corruption?
     readHeader: <link="a"><u>Mr pikimusta causes corruption?</u></link>
     text: In an interview about yesterdays statement made by the future party, Mr
       Pikimusta after being asked says "The captain assured me Ms Grau is guilty
-      and will be put away that what I paid him---" Mr Pikimusta suddenly leaves
-      without ansering anymore questions, who is this captain he mentioned?
+      and will be put away thats what I paid him---" Mr Pikimusta suddenly leaves
+      without answering anymore questions, who is this captain he mentioned?
     writer: Ash Slate
     ID: 1
   - header: Scam Mail Targets Government
@@ -10727,25 +10729,125 @@ MonoBehaviour:
     writer: Gainsboro - alias
     ID: 1
   - header: Mr pikimusta questionable interview
-    readHeader: <link="b"><u>Mr pikimusta questionable interview</u></link>
+    readHeader: <link="c"><u>Mr pikimusta questionable interview</u></link>
     text: Yesterdays interview about the future parties statement results in interesting
       ways. Mr pikimusta says "Im not worried about her, The captain assured me Ms
-      Grau is guilty and will be put away that what I paid him-". Mr Pikimusta got
+      Grau is guilty and will be put away thats what I paid him-". Mr Pikimusta got
       up mid sentence and left. What could this mean?
     writer: Silver Scrape
     ID: 1
-  - header: Car crash, church bell and escaping kiosk
-    readHeader: Car crash, church bell and escaping kiosk
+  - header: Car crash, church bell, escaping kiosk, mysterious pills, jeans in a
+      tree and odd dogs
+    readHeader: Car crash, church bell, escaping kiosk, mysterious pills, jeans in
+      a tree and odd dogs
     text: A red fastBil has crashed in the city center, no one was hurt. The driver
       was tired after a long shift and after a pedestrian suddenly jumped in the
       way the driver got spooked and drove into a tree stump. Local church bell falls
       out of the tower! nobody knows how this happened but it will be in repair for
       a while now, I will miss waking up to that loud thing. The new popular sausage
-      kiosks breaks and the kiosk started to roll downhill. It finally crashed into
-      a wall and was totally destroyed, our cities moral for sure lowered with this
-      lose.
+      kiosks brakes break and the kiosk started to roll downhill. It finally crashed
+      into a wall and was totally destroyed, our cities moral for sure lowered with
+      this loss. Mysterious pills have been found at the library, all different colors.
+      A tree near the library has a pair of jeans thrown into the branches? whos
+      are the? Someone walking hairless dogs in the city center, nasty...
     writer: Jenny Moonrouder
     ID: 1
+--- !u!82 &524250574
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524250567}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &525677431
 GameObject:
   m_ObjectHideFlags: 0
@@ -17389,6 +17491,7 @@ MonoBehaviour:
   timeText: {fileID: 861103037}
   startOfGame: 1
   notif: {fileID: 1848855844}
+  fadeOut: {fileID: 1996684450}
 --- !u!4 &857408842
 Transform:
   m_ObjectHideFlags: 0
@@ -18673,6 +18776,7 @@ GameObject:
   - component: {fileID: 911023506}
   - component: {fileID: 911023505}
   - component: {fileID: 911023507}
+  - component: {fileID: 911023508}
   m_Layer: 5
   m_Name: slowKiloApp
   m_TagString: Untagged
@@ -18795,8 +18899,8 @@ MonoBehaviour:
   - {fileID: 1824445763}
   - {fileID: 627614484}
   - {fileID: 1135857942}
-  savedHeader: {fileID: 0}
-  audioSource: {fileID: 0}
+  savedHeader: {fileID: 8300000, guid: 70302f817c3fe2e4a85598d7076a025f, type: 3}
+  audioSource: {fileID: 911023508}
   postListTemp: []
   postList:
   - image: {fileID: 21300000, guid: b7e38038798355d46b3cf66089a85e4e, type: 3}
@@ -18883,7 +18987,7 @@ MonoBehaviour:
   - image: {fileID: 21300000, guid: 44fbfd8c3573f6840a10f09a81f78c53, type: 3}
     textWithLink: HOLY SHIT, im finalli engane #summerweeding
     text: 
-    profileName: DJ blueberry shot
+    profileName: Jenny soontobesmith
     profilePicture: {fileID: 21300000, guid: 5530ccdc5b8427949adb520c362fa86e, type: 3}
     ID: 0
   - image: {fileID: 21300000, guid: 4ff2190a6b3ebb1409aac21ffa4828ea, type: 3}
@@ -18923,6 +19027,102 @@ MonoBehaviour:
     profileName: DJ blueberry shot
     profilePicture: {fileID: 21300000, guid: 805013393a73a3d4b91a2242f492c975, type: 3}
     ID: 0
+--- !u!82 &911023508
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911023503}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &913215365
 GameObject:
   m_ObjectHideFlags: 0
@@ -21978,7 +22178,7 @@ MonoBehaviour:
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
-  savedHeader: {fileID: 8300000, guid: e49874f19fdb7114bbf776cb9e5f53c0, type: 3}
+  savedHeader: {fileID: 8300000, guid: 70302f817c3fe2e4a85598d7076a025f, type: 3}
   startOfGame: 0
   isThereAnEmail: 0
   emailList:
@@ -41066,6 +41266,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984262071}
+  m_CullTransparentMesh: 1
+--- !u!1 &1996684448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996684449}
+  - component: {fileID: 1996684451}
+  - component: {fileID: 1996684450}
+  m_Layer: 5
+  m_Name: fadeout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1996684449
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996684448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 497833308}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1996684450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996684448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1996684451
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996684448}
   m_CullTransparentMesh: 1
 --- !u!1 &2000111488
 GameObject:

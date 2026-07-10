@@ -34,6 +34,7 @@ public class emailScript : MonoBehaviour, IPointerClickHandler
     public bool isThereAnEmail;
     void Start()
     {
+        audioSource.volume = 0.2f;
         reportDone = false;
         missionsToBe.Add("jokemission"); //just so a foreach later will run
         string captainAnswer = captainAnswerScript.Instance.captainEmail();

@@ -26,6 +26,7 @@ public class gameScript : MonoBehaviour
     public bool startOfGame = false;
     public Image notif;
     public static bool reportDone = false;
+    public Image fadeOut;
 
     void Awake()
     {
@@ -55,6 +56,24 @@ public class gameScript : MonoBehaviour
             closeApp();
         }
     }
+    public IEnumerator FadeIn()
+    {
+        float t = 0;
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime;
+            Color color = fadeOut.color;
+            color.a = Mathf.Lerp(0f, 1f, t / 1f);
+            fadeOut.color = color;
+            yield return null;
+        }
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+        reportDone = false;
+        emailScript.alreadySent = 0;
+    }
+
     public void speakThis(string toBeSpoken)
     {
         StartCoroutine(speaking(toBeSpoken));
@@ -144,10 +163,7 @@ public class gameScript : MonoBehaviour
     {
         if (reportDone)
         {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentSceneIndex + 1);
-            reportDone = false;
-            emailScript.alreadySent = 0;
+            StartCoroutine(FadeIn());
         }
         else
         {

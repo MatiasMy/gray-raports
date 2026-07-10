@@ -78,11 +78,11 @@ public class deputyScript : MonoBehaviour
                     Debug.Log("Break in at the goverment weapon storageDeputy Weiß");
                     break;
                 case "DJ blueberry shot found deadDeputy Weiß": // day 5
-                    emailAnswers = emailAnswers + "Dead DJ_Dead DJ_I asked around the station and the other deputies at the site but there are no leads to the killer yet. I dont think theres anythin to be found here_Molly Weiß|";
+                    emailAnswers = emailAnswers + "Dead DJ_Dead DJ_I asked around the station and the other deputies at the site but there are no leads to the killer yet. I dont think theres anything to be found here_Molly Weiß|";
                     Debug.Log("DJ blueberry shot found deadDeputy Weiß");
                     break;
                 case "Break in at the goverment weapon storageDeputy Black": // day 5
-                    emailAnswers = emailAnswers + "Resulsts: Weapon storage incident_<link=\"c\"><u>Resulsts: Weapon storage incident</u></link>_The army wont let anyone near the site. Looking around a bit I found a pair of cutters, they could have finger prints on them?. Nothing else notewrothy was found._Deputy Black|";
+                    emailAnswers = emailAnswers + "Results: Weapon storage incident_<link=\"c\"><u>Results: Weapon storage incident</u></link>_The army wont let anyone near the site. Looking around a bit I found a pair of cutters, they could have finger prints on them? Nothing else notewrothy was found._Deputy Black|";
                     Debug.Log("Break in at the goverment weapon storageDeputy Black");
                     break;
                 case "Corruption rumorsDeputy Weiß": // day 5
@@ -125,13 +125,13 @@ public class deputyScript : MonoBehaviour
                     emailAnswers = emailAnswers + "I dont trust him_I dont trust him_ captain Schwarz was placed into questioning today regarding his corruption and ties to Ms Grauses case, she deserves justice._Molly Weiß|";
                     Debug.Log("Mr pikimusta questionable interviewDeputy Weiß");
                     break;
-                case "Resulsts: Weapon storage incidentDeputy Black": // day 6
+                case "Results: Weapon storage incidentDeputy Black": // day 6
                     emailAnswers = emailAnswers + "Results: explosive search_Results: explosive search_Sir, I wasnt able to find anything related to this explosive device. Shooting at the docks may have something to do with it tho._Deputy Black|";
-                    Debug.Log("Resulsts: Weapon storage incidentDeputy Black");
+                    Debug.Log("Results: Weapon storage incidentDeputy Black");
                     break;
-                case "Resulsts: Weapon storage incidentDeputy Weiß": // day 6
-                    emailAnswers = emailAnswers + "Hi serg, I wasnt able to find any indications of any bombs. There was shooting at the docks, maybe something could be there?_Molly Weiß|";
-                    Debug.Log("Resulsts: Weapon storage incidentDeputy Weiß");
+                case "Results: Weapon storage incidentDeputy Weiß": // day 6
+                    emailAnswers = emailAnswers + "Eyes to the shooting_Eyes to the shooting_Hi serg, I wasnt able to find any indications of any bombs. There was shooting at the docks, maybe something could be there?_Molly Weiß|";
+                    Debug.Log("Results: Weapon storage incidentDeputy Weiß");
                     break;
                 case "Finish the jobDeputy Weiß": // day 7
                     emailAnswers = emailAnswers + "Im leaving_Im leaving_Sergeant, we got the bastard, but ive realized policework isnt for me. Im leaving to go help The future party and Ms Grau in getting out of prison._Molly Weiß|";

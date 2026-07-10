@@ -17606,6 +17606,7 @@ MonoBehaviour:
   timeText: {fileID: 861103037}
   startOfGame: 1
   notif: {fileID: 1848855844}
+  fadeOut: {fileID: 0}
 --- !u!4 &857408842
 Transform:
   m_ObjectHideFlags: 0

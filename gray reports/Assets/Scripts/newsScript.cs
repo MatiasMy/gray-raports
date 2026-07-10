@@ -15,6 +15,7 @@ public class newsScript : MonoBehaviour, IPointerClickHandler
     public AudioSource audioSource;
     void Start()
     {
+        audioSource.volume = 0.2f;
         comic.sprite = comicOfTheDay;
         for (int i = 0; i < newsList.Count; i++)
         {

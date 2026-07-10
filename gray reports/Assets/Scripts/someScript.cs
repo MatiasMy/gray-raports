@@ -13,6 +13,7 @@ public class someScript : MonoBehaviour, IPointerClickHandler
     public AudioSource audioSource;
     void Start()
     {
+        audioSource.volume = 0.2f;
         for (int i = 0; i < postList.Count; i++)
         {
             postList[i].ID = i;
@@ -43,7 +44,10 @@ public class someScript : MonoBehaviour, IPointerClickHandler
             if (linkIndex != -1)
             {
                 TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
-                audioSource.PlayOneShot(savedHeader);
+                if(savedHeader != null)
+                {
+                    audioSource.PlayOneShot(savedHeader);
+                }
                 switch (linkInfo.GetLinkID())
                 {
                     case "a":
@@ -85,13 +89,30 @@ public class someScript : MonoBehaviour, IPointerClickHandler
     public void like(Button button)
     {
         button.image.color = Color.red;
-        if (2f > Random.Range(0, 10))
+        int num = Random.Range(0, 10);
+        if (1f > num)
         {
             gameScript.Instance.speakThis("I should get back to work");
         }
-        else if (8f < Random.Range(0, 10))
+        else if (9f < num)
         {
             gameScript.Instance.speakThis("Thats dumb, I have a case to solve");
+        }
+        else if (4f == num)
+        {
+            gameScript.Instance.speakThis("What a waste of time");
+        }
+        else if (6f == num)
+        {
+            gameScript.Instance.speakThis("Yeah okay....");
+        }
+        else if (7f == num)
+        {
+            gameScript.Instance.speakThis("Aint helping in the case but its kinda funny");
+        }
+        else if (3f == num)
+        {
+            gameScript.Instance.speakThis("hehe....");
         }
     }
     [System.Serializable]
