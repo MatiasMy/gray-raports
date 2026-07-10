@@ -32,6 +32,7 @@ public class someScript : MonoBehaviour, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("clicked");
         foreach (TMP_Text text in texts)
         {
             int linkIndex = TMP_TextUtilities.FindIntersectingLink(

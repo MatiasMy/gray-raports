@@ -21978,10 +21978,16 @@ MonoBehaviour:
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
-  savedHeader: {fileID: 0}
+  savedHeader: {fileID: 8300000, guid: e49874f19fdb7114bbf776cb9e5f53c0, type: 3}
   startOfGame: 0
-  isThereAnEmail: 1
-  emailList: []
+  isThereAnEmail: 0
+  emailList:
+  - header: Shooting at the docks!
+    readHeader: <link="a"><u>Shooting at the docks!</u></link>
+    text: Theres shooting at the docks, send one of your deputies to investigate
+      it!
+    from: Captain Schwarz
+    ID: 0
 --- !u!82 &1043703208
 AudioSource:
   m_ObjectHideFlags: 0

@@ -23077,7 +23077,7 @@ MonoBehaviour:
   audioSource: {fileID: 1043703208}
   receivedEmail: {fileID: 8300000, guid: f6eea347e553f684e9a6387e22827f79, type: 3}
   sentAnEmail: {fileID: 8300000, guid: a07ebd4e64bb90b41a46d5ab96ca58bc, type: 3}
-  savedHeader: {fileID: 0}
+  savedHeader: {fileID: 8300000, guid: e49874f19fdb7114bbf776cb9e5f53c0, type: 3}
   startOfGame: 0
   isThereAnEmail: 0
   emailList: []
